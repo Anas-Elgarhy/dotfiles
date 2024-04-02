@@ -9,6 +9,10 @@ setopt aliases    # Expand aliases
 setopt autocd
 setopt cdablevars
 setopt multios
+setopt extended_history
+setopt inc_append_history_time
+setopt autopushd
+setopt pushdignoredups
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -16,6 +20,7 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 
 # PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.% "
 
+DIRSTACKSIZE=25
 # History in cache directory:
 HISTSIZE=1000000000
 SAVEHIST=1000000000

@@ -19,12 +19,12 @@ fi
 export PATH="$PATH:$HOME/.local/share/bin"
 export PATH="$PATH:$JAVA_HOME/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/Android/Sdk/platform-tools"
 export PATH="$PATH:$HOME/.scripts"
-export PATH="$PATH:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin"
+# export PATH="$PATH:$HOME/.config/emacs/bin:$HOME/.emacs.d/bin"
 export PATH="$PATH:/snap/bin"
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:$HOME/.nimbel/bin"
 
 ### cargo ###
 export CARGO_TARGET_DIR=$HOME/.cargo-target
-export PATH="$PATH:$CARGO_TARGET_DIR/release"
+# export PATH="$PATH:$CARGO_TARGET_DIR/release"
 . "$HOME/.cargo/env"
