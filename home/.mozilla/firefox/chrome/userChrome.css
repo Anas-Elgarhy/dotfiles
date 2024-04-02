@@ -35,6 +35,16 @@
 	flex-direction: column-reverse;
 }
 
+/* Center text in the search bar */
+#urlbar-input {
+	text-align: center !important;
+}
+
+/* If #urlbar-input does not work, you might need to target the actual input field within the URL bar container */
+/* #urlbar #urlbar-input-container input { */
+/* text-align: center !important; */
+/* } */
+
 .search-one-offs {
 	display: none !important;
 }
