@@ -150,4 +150,26 @@ panelview.cui-widget-panelview>vbox {
 	flex: 1;
 	min-height: 50vh;
 }
+
+/* Reduce the height and padding of the navigation toolbar by default */
+#nav-bar {
+	--toolbar-reduced-height: 24px;
+	/* Reduced height */
+	--toolbar-original-height: 39px;
+	/* Default height, adjust as needed */
+	height: var(--toolbar-reduced-height);
+	padding-top: 2px;
+	/* Adjust padding to ensure buttons are vertically centered */
+	padding-bottom: 2px;
+	/* transition: height 0.2s ease-out, padding 0.2s ease-out; */
+}
+
+
+/* Adjust the margin or padding of the following toolbar to avoid overlap */
+#PersonalToolbar {
+	/* Adjust the bookmarks toolbar as an example */
+	margin-top: 4px;
+	/* Increase if there is overlap */
+}
+
 }
