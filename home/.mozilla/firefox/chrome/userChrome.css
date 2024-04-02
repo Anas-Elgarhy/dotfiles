@@ -80,6 +80,30 @@ toolbox[inFullscreen=true] {
 	display: none;
 }
 
+
+/* Scale down tabs by default */
+.tabbrowser-tab {
+	transform: scale(0.8);
+	transform-origin: top;
+	transition: transform 0.2s ease-out;
+}
+
+/* Return tabs to original size on hover */
+.tabbrowser-tab:hover {
+	transform: scale(1.0);
+}
+
+/* Adjust the height of the tab bar to fit the scaled-down tabs */
+#TabsToolbar {
+	min-height: 20px !important;
+	/* Adjust this value based on your default tab height */
+}
+
+/* Ensure the active tab is fully visible */
+.tabbrowser-tab[selected="true"] {
+	transform: scale(1.0);
+}
+
 /*
 	 * the following makes it so that the on-click panels in the nav-bar
 	 * extend upwards, not downwards. some of them are in the #mainPopupSet
