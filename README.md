@@ -1,7 +1,4 @@
-## Screenshots 
-![](./Screenshots/zsh-neofetch-kitty-cmus-notify-v0.3.png)
-![](./Screenshots/zsh-neofetch-kitty-cava-tty_clock-v0.3.png)
-![](./Screenshots/zsh-kitty-v0.3.png)
+Very (boring) system, focused on the **content**.
 
 ## Ref
 ### Laptop stuff
