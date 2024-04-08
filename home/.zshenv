@@ -26,5 +26,6 @@ export PATH="$PATH:$HOME/.nimbel/bin"
 
 ### cargo ###
 export CARGO_TARGET_DIR=$HOME/.cargo-target
+export CARGO_MOMMYS_LITTLE="boy/baby"
 # export PATH="$PATH:$CARGO_TARGET_DIR/release"
 . "$HOME/.cargo/env"

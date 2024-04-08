@@ -27,6 +27,7 @@ alias e="$EDITOR"
 alias r='bat'
 
 # General
+alias cargo='cargo mommy'
 alias c='cargo'
 alias ct='cargo test'
 alias m='make'
