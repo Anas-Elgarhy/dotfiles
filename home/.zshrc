@@ -9,7 +9,7 @@ setopt aliases    # Expand aliases
 setopt autocd
 setopt cdablevars
 setopt multios
-setopt extended_history
+# setopt extended_history
 setopt inc_append_history_time
 setopt autopushd
 setopt pushdignoredups
