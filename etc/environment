@@ -10,11 +10,11 @@
 #  _or_ they can be KEY DEFAULT="VALUE" where VALUE can then have spaces
 #  KEY="VALUE" does _not_ work!
 
-EDITOR=helix
+EDITOR=nvim
 TERMINAL=st
 PAGER=less
 SUDO=doas
-BROWSER=firefox-developer-edition
+BROWSER=firefox
 NAME DEFAULT="Anas Elgarhy"
 USERNAME=0x61nas
 EMAIL=anas.elgarhy.dev@gmail.com
