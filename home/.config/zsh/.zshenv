@@ -4,6 +4,14 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
+# Only source this once
+if [[ -z "$__HM_ZSH_SESS_VARS_SOURCED" ]]; then
+  export __HM_ZSH_SESS_VARS_SOURCED=1
+
+fi
+
+export ZDOTDIR=$HOME/'.config/zsh'
+
 export HISTCONTROL=ignoreboth:erasedups
 
 export JAVA_HOME='/usr/lib/jvm/java-19-openjdk'
@@ -23,6 +31,9 @@ export PATH="$PATH:$HOME/.scripts"
 export PATH="$PATH:/snap/bin"
 export PATH="$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts"
 export PATH="$PATH:$HOME/.nimbel/bin"
+
+### zoxide ###
+export _ZO_ECHO=1
 
 ### cargo ###
 export CARGO_TARGET_DIR=$HOME/.cargo-target
