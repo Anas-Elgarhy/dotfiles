@@ -1,0 +1,96 @@
+[alias]
+	addp = "add --patch"
+	aliases = "config --get-regexp alias"
+	amend = "commit --amend -S"
+	br = "branch"
+	brl = "!git for-each-ref --format='%(refname:short) %(objectname:short)' refs/heads/"
+	ci = "commit"
+	co = "checkout"
+	df = "diff"
+	ff = "merge --ff-only"
+	hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+	ignore = "!echo '$1' >> .gitignore"
+	last = "log -1 HEAD"
+	lg = "log --pretty=\"%C(magenta)%h%Creset %C(yellow)%d%Creset%s %C(bold cyan)(%ar)%Creset\""
+	lgg = "lg --abbrev-commit --all --graph"
+	logline = "log --graph --oneline --decorate"
+	pushf = "push --force"
+	shelve = "!git stash && git checkout"
+	squash = "!git rebase -i HEAD~$1"
+	st = "status"
+	sync = "!git fetch && git rebase origin/$(git symbolic-ref --short HEAD)"
+	uncommit = "reset HEAD^"
+	undo = "reset HEAD~"
+	unshelve = "stash apply && git stash drop"
+	unstage = "reset HEAD"
+	upstream = "branch --set-upstream-to"
+
+[commit]
+	gpgSign = true
+
+[core]
+	eol = "lf"
+	fsmonitor = true
+	pager = "delta"
+
+[diff]
+	tool = "nvimdiff"
+
+[difftool]
+	prompt = false
+
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[help]
+  autocorrect = 1
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+[github]
+	user = "0x61nas"
+
+[gpg]
+	program = "/bin/gpg"
+
+[init]
+	defaultBranch = "aurora"
+
+[interactive]
+	diffFilter = "delta --color-only"
+
+[merge]
+	tool = "nvimdiff"
+
+[mergetool]
+	prompt = true
+
+[mergetool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\" \"$MERGED\" -c 'wincmd w' -c 'wincmd J'"
+
+[push]
+	autoSetupRemote = true
+
+[safe]
+	directory = "*"
+
+[sendemail]
+	from = "anas.elgarhy.dev@gmail.com"
+	smtpencryption = "tls"
+	smtpserver = "smtp.gmail.com"
+	smtpserverport = 587
+	smtpuser = "anas.elgarhy.dev@gmail.com"
+
+[tag]
+	gpgSign = true
+
+[url "git@github.com:0x61nas/"]
+	insteadOf = "me:"
+
+[user]
+	email = "anas.elgarhy.dev@gmail.com"
+	name = "Anas Elgarhy"
+	signingKey = "0x83E03DC6F3834086"
+
