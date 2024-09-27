@@ -1,0 +1,6 @@
+state.json
+SingletonLock
+SingletonCookie
+SingletonSocket
+sessionData/
+Crashpad/
