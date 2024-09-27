@@ -122,16 +122,14 @@ channels = stereo
 [color]
 
 gradient = 1
-
-gradient_color_1 = '#8BE9FD'
-gradient_color_2 = '#9AEDFE'
-gradient_color_3 = '#CAA9FA'
-gradient_color_4 = '#BD93F9'
-gradient_color_5 = '#FF92D0'
-gradient_color_6 = '#FF79C6'
-gradient_color_7 = '#FF6E67'
-gradient_color_8 = '#FF5555'
-
+gradient_color_1 = '#83A598'  # Gruvbox aqua
+gradient_color_2 = '#8EC07C'  # Gruvbox green
+gradient_color_3 = '#D3869B'  # Gruvbox pink
+gradient_color_4 = '#B16286'  # Gruvbox purple
+gradient_color_5 = '#FABD2F'  # Gruvbox yellow
+gradient_color_6 = '#FE8019'  # Gruvbox orange
+gradient_color_7 = '#FB4934'  # Gruvbox red
+gradient_color_8 = '#CC241D'  # Gruvbox dark red
 
 
 [smoothing]
