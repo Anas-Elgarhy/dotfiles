@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1728381125316776-1</unique-id>
+	<command>st</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>nvim</icon>
+	<name>Open nvim here</name>
+	<submenu></submenu>
+	<unique-id>1730730396756116-1</unique-id>
+	<command>nvim %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+</actions>
