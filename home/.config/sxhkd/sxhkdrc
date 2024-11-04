@@ -14,7 +14,7 @@ super + Return
 	$TERMINAL
 
 # Lockscreen
-super + shift + x
+super + Escape
     slock
 
 ##---------- Applications ----------##
@@ -38,8 +38,8 @@ super + shift; {d,o}
 # Take a screenshot in the clipboard
 shift + Print
 	screenshot -n -c
-	
-Print	
+
+Print
 	screenshot -r -n -c
 
 ctrl + Print
@@ -48,8 +48,8 @@ ctrl + Print
 # Take a screenshot and save it
 alt + shift + Print
 	screenshot -n
-	
-alt + Print	
+
+alt + Print
 	screenshot -r -n
 
 alt + ctrl + Print
