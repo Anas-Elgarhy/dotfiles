@@ -24,9 +24,12 @@ alias .='pwd'
 alias e="\$EDITOR"
 
 # Read file
-alias r='bat'
+alias r='bat -p'
 
 # General
+alias _="\$SUDO"
+alias _!="\$SUDO !!"
+alias j="just"
 alias cargo='cargo mommy'
 alias c='cargo'
 alias ct='cargo test'
@@ -47,23 +50,23 @@ alias kl='keybase chat list'
 # Git
 alias g='git'
 alias gc='git checkout'
-alias push='git push'
-alias pusht='push --tags'
-alias pushf='push --force'
-alias commit='git commit -S'
+alias gpush='git push'
+alias gpusht='push --tags'
+alias gpushf='push --force'
+alias gcomm='git commit -S'
 alias clone='git clone'
 alias sclone='git clone --depth=1'
-alias add='git add'
-alias addp='git addp'
-alias status='git status'
-alias pull='git pull'
-alias fetch='git fetch'
-alias rebase='git rebase'
-alias tag='git tag'
-alias ctag='tag --sign'
-alias switch='git switch'
+alias gadd='git add'
+alias gaddp='git addp'
+alias gst='git status'
+alias gpull='git pull -r --autostash'
+alias gfet='git fetch'
+alias grebase='git rebase'
+alias gtag='git tag'
+alias gctag='tag --sign'
+alias gswitch='git switch'
 alias gah='git stash && git pull --rebase && git stash pop'
-alias pr='gh pr create -t $(git show -s --format=%s HEAD) -b $(git show -s --format=%B HEAD | tail -n+3)'
+alias ghpr='gh pr create -t $(git show -s --format=%s HEAD) -b $(git show -s --format=%B HEAD | tail -n+3)'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -71,9 +74,9 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-# alias rm='rm -i'
+alias cp="cp -vi"
+alias mv='mv -vi'
+alias rm='rm -v'
 
 #youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -81,6 +84,38 @@ alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac "
 alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
+
+# Docker
+alias d='docker'
+alias dps='docker ps'
+alias dpa='docker ps -a'
+alias dimg='docker images'
+alias drm='docker rm'
+alias drmi='docker rmi'
+alias dexec='docker exec -it'
+alias dlogs='docker logs -f'
+
+alias dbuild='docker build --network=host -t'
+alias drun='docker run --network=host -it'
+alias dstart='docker start -ai'
+alias drestart='docker restart'
+
+alias dc='docker compose'
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
+alias dcl='docker compose logs -f'
+
+alias dprune='docker system prune -af'
+alias dcleanc='docker container prune -f'
+alias dcleani='docker image prune -f'
+alias dcleann='docker network prune -f'
+
+alias dinspect='docker inspect'
+alias dnet='docker network ls'
+alias dvol='docker volume ls'
+alias dstop='docker stop'
+
+alias dreset='docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -q)'
 
 # Arch
 alias paru="paru --sudo $SUDO"
