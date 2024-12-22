@@ -21,7 +21,7 @@ alias .5='cd ../../../../..'
 alias .='pwd'
 
 # Edit something
-alias e="$EDITOR"
+alias e="\$EDITOR"
 
 # Read file
 alias r='bat'

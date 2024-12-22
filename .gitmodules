@@ -1,3 +1,6 @@
 [submodule "home/.config/nvim"]
 	path = home/.config/nvim
 	url = git@github.com:0x61nas/nvim.git
+[submodule "home/.config/gdb/gef"]
+	path = home/.config/gdb/gef
+	url = https://github.com/hugsy/gef.git
